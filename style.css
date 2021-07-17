@@ -1,20 +1,20 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     user-select: none;
-}
-
-body{
-    font-family: "Helvetica Neue",sans-serif;
+  }
+  
+  body {
+    font-family: "Helvetica Neue", sans-serif;
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.calculator{
+  }
+  
+  .calculator {
     background-color: black;
     border-radius: 50px;
     color: white;
@@ -22,9 +22,9 @@ body{
     width: 500px;
     padding: 20px;
     position: relative;
-}
-
-.display{
+  }
+  
+  .display {
     height: 250px;
     width: 100%;
     text-align: right;
@@ -33,24 +33,22 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    border: 1px solid red;
-}
-
-.previous-display{
+  }
+  
+  .previous-display {
     opacity: 0.5;
     font-size: 50px;
     overflow: hidden;
-}
-
-.buttons-container{
+  }
+  
+  .buttons-container {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    border: 1px solid blue;
-}
-
-.button {
+  }
+  
+  .button {
     align-items: center;
     background-color: #333;
     border-radius: 50%;
@@ -61,30 +59,30 @@ body{
     width: 100px;
     justify-content: center;
     transition: filter .3s;
-}
-
-.function{
+  }
+  
+  .function {
     color: black;
     background: #a5a5a5;
-}
-
-.operator{
-    background-color: #f1a33c;
-}
-
-.button.number-0{
-    grid-column: 1/span 2;
+  }
+  
+  .operator {
+    background: #f1a33c;
+  }
+  
+  .button.number-0 {
+    grid-column: 1 / span 2;
     justify-content: flex-start;
     padding-left: 43px;
     width: 215px;
     border-radius: 55px;
-}
-
-.button:active,
-.button:focus {
-  filter: brightness(120%)
-}
-
-.button:hover {
-  opacity: 0.5;
-}
+  }
+  
+  .button:active,
+  .button:focus {
+    filter: brightness(120%)
+  }
+  
+  .button:hover {
+    opacity: 0.5;
+  }
